@@ -3,13 +3,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <title>7 Days Fruit</title>
 <link rel="icon" type="image/x-icon" href="fruit.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 <style>
 body {
   background-color: black;
   color: white;
+  font-size: large;
 }
 .tabbing {
-margin-right:50em
+margin-right:47em
 }
 
 .has-details {
@@ -80,7 +82,7 @@ a { color: #FF0000;
     </tr>
   </thead>
   <tbody>
-    <tr> 
+    <tr border="1"> 
       <th scope="row">1</th>
       <td>• MATIC</td>
       <td class="has-details"><div id="marketmatic"></div><span class="details">matic</span></td>
@@ -92,14 +94,14 @@ a { color: #FF0000;
       <td class="has-details"><u><div id="getmatic"></div></u><span class="details">matic</span></td>
       <td class="has-details"><div id="maticpercent"></div><span class="details">matic</span></td>
       <td class="has-details"><div id="matic-networkath"></div><span class="details">matic</span></td>
-      <td><input type="text" onFocus="this.select()" id="Amountmatic" style="font-size:8pt;height:20px;width:120px;"></td>
-	    <td><input type="text" onFocus="this.select()" id="Investmatic" style="font-size:8pt;height:20px;width:70px;"></td>
+      <td><input type="text" onFocus="this.select()" id="Amountmatic" style="height:20px;width:120px;"></td>
+	    <td><input type="text" onFocus="this.select()" id="Investmatic" style="height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valuematic"></div><span class="details">matic</span></td>
       <td class="has-details"><div id="Percentmatic"></div><span class="details">matic</span></td>
       <td class="has-details"><div id="Profitmatic"></div><span class="details">matic</span></td>
-      <td><button type="button" class="btn btn-success" style="font-size:10pt;background-color:green;color:white;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=MATIC','popup','width=1600,height=900')">Convert</button></td>
-      <td><button type="button" class="btn btn-secondary btn-sm" style="font-size:10pt;background-color:red;color:white;" onclick="window.open('https://nomics.com/assets/matic-matic/prediction','popup','width=1600,height=900')">Prediction</button></td>
-      <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AMATICBUSD&interval=1D','popup','width=1600,height=900')">MATIC : BUSD</button></td>
+      <td><button type="button" class="btn btn-success"  onclick="window.open('https://www.binance.com/en/convert?fromCoin=MATIC','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-secondary btn-sm"  onclick="window.open('https://nomics.com/assets/matic-matic/prediction','popup','width=1600,height=900')">Prediction</button></td>
+      <td><button type="button" class="btn btn-warning btn-sm" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AMATICBUSD&interval=1D','popup','width=1600,height=900')">MATIC : BUSD</button></td>
     </tr>
     <tr>
       <th scope="row">2</th>
@@ -113,14 +115,14 @@ a { color: #FF0000;
       <td class="has-details"><u><div id="getgala"></div></u><span class="details">gala</span></td>
       <td class="has-details"><div id="galapercent"></div><span class="details">gala</span></td>
       <td class="has-details"><div id="galaath"></div><span class="details">gala</span></td>
-      <td><input type="text" onFocus="this.select()" id="Amountgala" style="font-size:8pt;height:20px;width:120px;"></td>
-	    <td><input type="text" onFocus="this.select()" id="Investgala" style="font-size:8pt;height:20px;width:70px;"></td>
+      <td><input type="text" onFocus="this.select()" id="Amountgala" style="height:20px;width:120px;"></td>
+	    <td><input type="text" onFocus="this.select()" id="Investgala" style="height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valuegala"></div><span class="details">gala</span></td>
       <td class="has-details"><div id="Percentgala"></div><span class="details">gala</span></td>
       <td class="has-details"><div id="Profitgala"></div><span class="details">gala</span></td>
-      <td><button type="button" class="btn btn-success" style="font-size:10pt;background-color:green;color:white;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=GALA','popup','width=1600,height=900')">Convert</button></td>
-      <td><button type="button" class="btn btn-secondary btn-sm" style="font-size:10pt;background-color:red;color:white;" onclick="window.open('https://nomics.com/assets/gala/prediction','popup','width=1600,height=900')">Prediction</button></td>
-      <td><button type="button" class="btn btn-primary btn-sm" style="font-size:8pt;background-color:black;color:white;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AGALABUSD&interval=1D','popup','width=1600,height=900')">GALA : BUSD</button></td>
+      <td><button type="button" class="btn btn-success"  onclick="window.open('https://www.binance.com/en/convert?fromCoin=GALA','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-secondary btn-sm"  onclick="window.open('https://nomics.com/assets/gala/prediction','popup','width=1600,height=900')">Prediction</button></td>
+      <td><button type="button" class="btn btn-primary btn-sm"  onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AGALABUSD&interval=1D','popup','width=1600,height=900')">GALA : BUSD</button></td>
     </tr>
     <tr>
       <th scope="row">3</th>
@@ -134,14 +136,14 @@ a { color: #FF0000;
       <td class="has-details"><u><div id="getlink"></div></u><span class="details">link</span></td>
       <td class="has-details"><div id="linkpercent"></div><span class="details">link</span></td>
       <td class="has-details"><div id="chainlinkath"></div><span class="details">link</span></td>
-      <td><input type="text" onFocus="this.select()" id="Amountlink" style="font-size:8pt;height:20px;width:120px;"></td>
-	    <td><input type="text" onFocus="this.select()" id="Investlink" style="font-size:8pt;height:20px;width:70px;"></td>
+      <td><input type="text" onFocus="this.select()" id="Amountlink" style="height:20px;width:120px;"></td>
+	    <td><input type="text" onFocus="this.select()" id="Investlink" style="height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valuelink"></div><span class="details">link</span></td>
       <td class="has-details"><div id="Percentlink"></div><span class="details">link</span></td>
       <td class="has-details"><div id="Profitlink"></div><span class="details">link</span></td>
-      <td><button type="button" class="btn btn-success" style="font-size:10pt;background-color:green;color:white;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=LINK','popup','width=1600,height=900')">Convert</button></td>
-      <td><button type="button" class="btn btn-secondary btn-sm" style="font-size:10pt;background-color:red;color:white;" onclick="window.open('https://nomics.com/assets/link/prediction','popup','width=1600,height=900')">Prediction</button></td>
-      <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ALINKBUSD&interval=1D','popup','width=1600,height=900')">LINK : BUSD</button></td>
+      <td><button type="button" class="btn btn-success"  onclick="window.open('https://www.binance.com/en/convert?fromCoin=LINK','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-secondary btn-sm"  onclick="window.open('https://nomics.com/assets/link/prediction','popup','width=1600,height=900')">Prediction</button></td>
+      <td><button type="button" class="btn btn-warning btn-sm" style="" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ALINKBUSD&interval=1D','popup','width=1600,height=900')">LINK : BUSD</button></td>
     </tr>
 	    <tr>
       <th scope="row">4</th>
@@ -155,14 +157,14 @@ a { color: #FF0000;
       <td class="has-details"><u><div id="getmana"></div></u><span class="details">mana</span></td>
       <td class="has-details"><div id="manapercent"></div><span class="details">mana</span></td>
       <td class="has-details"><div id="decentralandath"></div><span class="details">mana</span></td>
-      <td><input type="text" onFocus="this.select()" id="Amountmana" style="font-size:8pt;height:20px;width:120px;"></td>
-	    <td><input type="text" onFocus="this.select()" id="Investmana" style="font-size:8pt;height:20px;width:70px;"></td>
+      <td><input type="text" onFocus="this.select()" id="Amountmana" style="height:20px;width:120px;"></td>
+	    <td><input type="text" onFocus="this.select()" id="Investmana" style="height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valuemana"></div><span class="details">mana</span></td>
       <td class="has-details"><div id="Percentmana"></div><span class="details">mana</span></td>
       <td class="has-details"><div id="Profitmana"></div><span class="details">mana</span></td>
-      <td><button type="button" class="btn btn-success" style="font-size:10pt;background-color:green;color:white;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=MANA','popup','width=1600,height=900')">Convert</button></td>
-      <td><button type="button" class="btn btn-secondary btn-sm" style="font-size:10pt;background-color:red;color:white;" onclick="window.open('https://nomics.com/assets/mana/prediction','popup','width=1600,height=900')">Prediction</button></td>
-      <td><button type="button" class="btn btn-primary btn-sm" style="font-size:8pt;background-color:black;color:white;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AMANABUSD&interval=1D','popup','width=1600,height=900')">mana : BUSD</button></td>
+      <td><button type="button" class="btn btn-success"  onclick="window.open('https://www.binance.com/en/convert?fromCoin=MANA','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-secondary btn-sm"  onclick="window.open('https://nomics.com/assets/mana/prediction','popup','width=1600,height=900')">Prediction</button></td>
+      <td><button type="button" class="btn btn-primary btn-sm"  onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AMANABUSD&interval=1D','popup','width=1600,height=900')">mana : BUSD</button></td>
     </tr>
 	    <tr>
       <th scope="row">5</th>
@@ -176,14 +178,14 @@ a { color: #FF0000;
       <td class="has-details"><u><div id="getalgo"></div></u><span class="details">algo</span></td>
       <td class="has-details"><div id="algopercent"></div><span class="details">algo</span></td>
       <td class="has-details"><div id="algorandath"></div><span class="details">algo</span></td>
-      <td><input type="text" onFocus="this.select()" id="Amountalgo" style="font-size:8pt;height:20px;width:120px;"></td>
-	    <td><input type="text" onFocus="this.select()" id="Investalgo" style="font-size:8pt;height:20px;width:70px;"></td>
+      <td><input type="text" onFocus="this.select()" id="Amountalgo" style="height:20px;width:120px;"></td>
+	    <td><input type="text" onFocus="this.select()" id="Investalgo" style="height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valuealgo"></div><span class="details">algo</span></td>
       <td class="has-details"><div id="Percentalgo"></div><span class="details">algo</span></td>
       <td class="has-details"><div id="Profitalgo"></div><span class="details">algo</span></td>
-      <td><button type="button" class="btn btn-success" style="font-size:10pt;background-color:green;color:white;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=ALGO','popup','width=1600,height=900')">Convert</button></td>
-      <td><button type="button" class="btn btn-secondary btn-sm" style="font-size:10pt;background-color:red;color:white;" onclick="window.open('https://nomics.com/assets/algo/prediction','popup','width=1600,height=900')">Prediction</button></td>
-      <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AalgoBUSD&interval=1D','popup','width=1600,height=900')">ALGO : BUSD</button></td>
+      <td><button type="button" class="btn btn-success"  onclick="window.open('https://www.binance.com/en/convert?fromCoin=ALGO','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-secondary btn-sm"  onclick="window.open('https://nomics.com/assets/algo/prediction','popup','width=1600,height=900')">Prediction</button></td>
+      <td><button type="button" class="btn btn-warning btn-sm" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AalgoBUSD&interval=1D','popup','width=1600,height=900')">ALGO : BUSD</button></td>
     </tr>
 	      <th scope="row">6</th>
       <td>• APE</td>
@@ -196,14 +198,14 @@ a { color: #FF0000;
       <td class="has-details"><u><div id="getape"></div></u><span class="details">ape</span></td>
       <td class="has-details"><div id="apepercent"></div><span class="details">ape</span></td>
       <td class="has-details"><div id="apecoinath"></div><span class="details">ape</span></td>
-      <td><input type="text" onFocus="this.select()" id="Amountape" style="font-size:8pt;height:20px;width:120px;"></td>
-	    <td><input type="text" onFocus="this.select()" id="Investape" style="font-size:8pt;height:20px;width:70px;"></td>
+      <td><input type="text" onFocus="this.select()" id="Amountape" style="height:20px;width:120px;"></td>
+	    <td><input type="text" onFocus="this.select()" id="Investape" style="height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valueape"></div><span class="details">ape</span></td>
       <td class="has-details"><div id="Percentape"></div><span class="details">ape</span></td>
       <td class="has-details"><div id="Profitape"></div><span class="details">ape</span></td>
-      <td><button type="button" class="btn btn-success" style="font-size:10pt;background-color:green;color:white;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=APE','popup','width=1600,height=900')">Convert</button></td>
-      <td><button type="button" class="btn btn-secondary btn-sm" style="font-size:10pt;background-color:red;color:white;" onclick="window.open('https://nomics.com/assets/ape7-apecoin/prediction','popup','width=1600,height=900')">Prediction</button></td>
-      <td><button type="button" class="btn btn-primary btn-sm" style="font-size:8pt;background-color:black;color:white;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AAPEBUSD&interval=1D','popup','width=1600,height=900')">APE : BUSD</button></td>
+      <td><button type="button" class="btn btn-success"  onclick="window.open('https://www.binance.com/en/convert?fromCoin=APE','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-secondary btn-sm"  onclick="window.open('https://nomics.com/assets/ape7-apecoin/prediction','popup','width=1600,height=900')">Prediction</button></td>
+      <td><button type="button" class="btn btn-primary btn-sm"  onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3AAPEBUSD&interval=1D','popup','width=1600,height=900')">APE : BUSD</button></td>
     </tr>
 	      <th scope="row">7</th>
       <td>• SAND</td>
@@ -216,14 +218,14 @@ a { color: #FF0000;
       <td class="has-details"><u><div id="getsand"></div></u><span class="details">sand</span></td>
       <td class="has-details"><div id="sandpercent"></div><span class="details">sand</span></td>
       <td class="has-details"><div id="the-sandboxath"></div><span class="details">sand</span></td>
-      <td><input type="text" onFocus="this.select()" id="Amountsand" style="font-size:8pt;height:20px;width:120px;"></td>
-	    <td><input type="text" onFocus="this.select()" id="Investsand" style="font-size:8pt;height:20px;width:70px;"></td>
+      <td><input type="text" onFocus="this.select()" id="Amountsand" style="height:20px;width:120px;"></td>
+	    <td><input type="text" onFocus="this.select()" id="Investsand" style="height:20px;width:70px;"></td>
       <td class="has-details"><div id="Valuesand"></div><span class="details">sand</span></td>
       <td class="has-details"><div id="Percentsand"></div><span class="details">sand</span></td>
       <td class="has-details"><div id="Profitsand"></div><span class="details">sand</span></td>
-      <td><button type="button" class="btn btn-success" style="font-size:10pt;background-color:green;color:white;" onclick="window.open('https://www.binance.com/en/convert?fromCoin=SAND','popup','width=1600,height=900')">Convert</button></td>
-      <td><button type="button" class="btn btn-secondary btn-sm" style="font-size:10pt;background-color:red;color:white;" onclick="window.open('https://nomics.com/assets/sand2-the-sandbox/prediction','popup','width=1600,height=900')">Prediction</button></td>
-      <td><button type="button" class="btn btn-warning btn-sm" style="font-size:8pt;" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ASANDBUSD&interval=1D','popup','width=1600,height=900')">SAND : BUSD</button></td>
+      <td><button type="button" class="btn btn-success"  onclick="window.open('https://www.binance.com/en/convert?fromCoin=SAND','popup','width=1600,height=900')">Convert</button></td>
+      <td><button type="button" class="btn btn-secondary btn-sm"  onclick="window.open('https://nomics.com/assets/sand2-the-sandbox/prediction','popup','width=1600,height=900')">Prediction</button></td>
+      <td><button type="button" class="btn btn-warning btn-sm" onclick="window.open('https://www.tradingview.com/chart/?symbol=BINANCE%3ASANDBUSD&interval=1D','popup','width=1600,height=900')">SAND : BUSD</button></td>
     </tr>
 </tbody>
 </table>
