@@ -5,5 +5,5 @@
 - กรอกแค่จำนวนเงินที่ใช้ซื้ออย่างเดียว
 
 ติดตั้ง
-npm i local-storage
-npm i xmlhttprequest
+- npm i local-storage
+- npm i xmlhttprequest
