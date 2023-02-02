@@ -317,7 +317,7 @@ a.download = "7days-fruit-export.csv"
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=MATICBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(0)
+    price = Number(data.askPrice)
     document.getElementById("getmatic").innerHTML = price
     if (data.priceChangePercent > 0){
       document.getElementById("maticpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -341,7 +341,7 @@ const getgala = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=GALABUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(2)
+    price = Number(data.askPrice)
     document.getElementById("getgala").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("galapercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -365,7 +365,7 @@ const getlink = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=LINKBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(0)
+    price = Number(data.askPrice)
     document.getElementById("getlink").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("linkpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -389,7 +389,7 @@ const getmana = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=MANABUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(2)
+    price = Number(data.askPrice)
     document.getElementById("getmana").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("manapercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -413,7 +413,7 @@ const getalgo = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=ALGOBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(7)
+    price = Number(data.askPrice)
     document.getElementById("getalgo").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("algopercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -437,7 +437,7 @@ const getape = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=APEBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(6)
+    price = Number(data.askPrice)
     document.getElementById("getape").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("apepercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
@@ -461,7 +461,7 @@ const getsand = async () => {
    fetch("https://api.binance.com/api/v1/ticker/24hr?symbol=SANDBUSD")
   .then(response => response.json())
   .then(data => {
-    price = Number(data.askPrice).toFixed(4)
+    price = Number(data.askPrice)
     document.getElementById("getsand").innerHTML = price
         if (data.priceChangePercent > 0){
       document.getElementById("sandpercent").innerHTML = (Number(data.priceChangePercent).toFixed(1) + '%✓').fontcolor("#108F3A")
